@@ -1,0 +1,317 @@
+:root {
+  --primary-color: #531015;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+a {
+  color: #ffffffe6;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka One";
+  color: var(--primary-color);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--primary-color);
+  color: #ffffffe6;
+  align-items: center;
+}
+
+.school-name {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.list-header {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+  gap: 50px;
+}
+
+.list-header > li {
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  padding: 24px 6px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.list-header > li:hover {
+  background-color: white;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.list-header > li > a {
+  transition: all 0.3s ease-in-out;
+}
+
+.list-header > li:hover > a {
+  color: var(--primary-color);
+}
+
+.super-second-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.school-education {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.super-school-education {
+  margin-left: 100px;
+}
+
+.second-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.second-education {
+  margin-bottom: 30px;
+  color: var(--primary-color);
+
+  font-size: 18px;
+}
+
+.second-title {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.second-education-2 {
+  color: #696969;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.second-qualitys {
+  color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row-gap: 20px;
+  font-weight: bold;
+}
+
+.second-education-3 {
+  margin-top: 25px;
+  color: #696969;
+}
+
+.button-matricular {
+  position: fixed;
+  z-index: 2;
+  right: 32px;
+  bottom: 24px;
+  width: 10%;
+  margin-top: 30px;
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.super-main {
+  background-image: url(http://demo.yolotheme.com/dummy/giraffe/wp-content/uploads/2020/07/bg-01.jpg?id=4175) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding: 60px 0;
+  margin: 32px 0;
+}
+
+.main-text-journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.journey-impact {
+  margin-bottom: 6px;
+  font-family: "Gloria Hallelujah", cursive;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.steps-journey {
+  margin-top: 50px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+  margin-right: 72px;
+}
+
+.education:last-of-type {
+  margin-right: 0px;
+}
+
+.journey-h1 {
+  margin-bottom: 30px;
+}
+
+.photo-journey {
+  width: 130px;
+}
+
+.journey-text {
+  font-size: 15px;
+  color: #696969;
+}
+
+.journey-education {
+  font-size: 20px;
+  margin: 12px 0;
+  color: var(--primary-color);
+}
+
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.school-name-footer {
+  font-weight: bold;
+}
+
+.button-matricular:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-matricular:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
